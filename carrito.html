@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito - Casa Angel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Carrito de Compras</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Categorías</a></li>
+        <li><a href="carrito.html">🛒 Carrito (<span id="contador-carrito">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="carrito">
+    <h2>Tu Carrito</h2>
+    <div id="lista-carrito"></div>
+    <p><strong>Total:</strong> $<span id="total">0</span></p>
+    <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+    <button id="pagar">Pagar</button>
+  <p id="mensaje-pago" style="display: none; color: green; font-weight: bold;"></p>
+  </section>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
+
