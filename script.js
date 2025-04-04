@@ -9,12 +9,12 @@ function agregarAlCarrito(nombre, precio, imagen) {
 
 function actualizarCarrito() {
   let contadorCarrito = document.getElementById("contador-carrito");
-  let listaCarrito = document.getElementById("lista-carrito");
-  let totalCarrito = document.getElementById("total");
-
   if (contadorCarrito) {
     contadorCarrito.innerText = carrito.length;
   }
+
+  let listaCarrito = document.getElementById("lista-carrito");
+  let totalCarrito = document.getElementById("total");
 
   if (listaCarrito && totalCarrito) {
     listaCarrito.innerHTML = "";
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("El carrito está vacío.");
         return;
       }
-      
+
       carrito = [];
       localStorage.setItem("carrito", JSON.stringify(carrito));
       actualizarCarrito();
